@@ -1,18 +1,30 @@
-## S3 Error: NewerNoncurrentVersions for NoncurrentVersionExpiration action must be a positive integer
+## Blog Post Title From First Header
 
-### Got this error on s3 while setting up S3 Lifecycle rules ?
+Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
 
+If the file does not start with a header, then the post title will be derived from the filename.
 
-One common issue that users face when setting lifecycle rules for versioned objects is that they are unable to set retention on versions less than 1. When attempting to set a lifecycle rule to retain non-current versions for 0 days, an error is thrown ```NewerNoncurrentVersions for NoncurrentVersionExpiration action must be a positive integer```
+This is a sample blog post. You can talk about all sorts of fun things here.
 
-![image](https://github.com/ChroniclesOfDevOps/ChroniclesOfDevOps.github.io/assets/166585975/62bc97b7-7795-415b-bec7-b638a856f684)
+---
 
-The reason for this error is due to a small miss in the way the retention policy is set. In the S3 management console, users are asked to specify the "Number of newer versions to retain". If this value is set to 0, an error is thrown.
+### This is a header
 
-![image](https://github.com/ChroniclesOfDevOps/ChroniclesOfDevOps.github.io/assets/166585975/61a67dc0-3384-4eae-882b-40cc406b2875)
+#### Some T-SQL Code
 
-To avoid this error, users should ensure that they leave the "Number of newer versions to retain" field blank when setting a retention policy for noncurrent versions, as shown in below image. S3 will interpret this as a value of 0 and allow the retention policy to be set accordingly. This will allow them to set a retention policy of 0 days, which is useful when managing objects that are no longer needed or that are outdated.
+```tsql
+SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
+    , REVERSE('abc')
+FROM dbo.SomeTable s
+    CROSS JOIN dbo.OtherTable o;
+```
 
-![image](https://github.com/ChroniclesOfDevOps/ChroniclesOfDevOps.github.io/assets/166585975/a9a690e0-bdbe-4db9-b0e2-cb467b114d5d)
+#### Some PowerShell Code
 
-To conclude, Amazon S3 versioning is a valuable feature that enables businesses to store and manage multiple versions of their objects. By understanding the nuances of how S3 interprets retention policies, users can avoid common errors and manage their objects more effectively.
+```powershell
+Write-Host "This is a powershell Code block";
+# There are many other languages you can use, but the style has to be loaded first
+ForEach ($thing in $things) {
+    Write-Output "It highlights it using the GitHub style"
+}
+```
