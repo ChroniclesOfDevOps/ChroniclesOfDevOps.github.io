@@ -11,8 +11,6 @@ email: "devopsresolved@gmail.com"
 #########################################################################################
 theme: "minima"
 
-rss: rss
-
 kramdown:
   syntax_highlighter_opts:
     disable: true
