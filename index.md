@@ -1,5 +1,1 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Get ready to dive into the complex world of DevOps, Infrastructure, AWS, and Kubernetes. In this blog I am going to write about my expreinces,  confusions, tricky fixes, and, yes the mishaps I have encounterd as DevOps engineer. So, fasten your seat belts and get ready to navigate the universe of DevOps, Infrastructure, AWS, Kubernetes with me because, in this odyssey, the journey is as illuminating as the destination.
