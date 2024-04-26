@@ -27,5 +27,3 @@ By effectively utilizing Pod Priority Class, Kubernetes users can streamline res
 
 **Here are some reference links to the official Kubernetes documentation regarding Pod Priority Class:**
 1. [Kubernetes Priority and Preemption](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/)
-2. [Kubernetes Priority Class](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/#priority-class)
-3. [Kubernetes API Reference: PriorityClass](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#priorityclass-v1-scheduling-k8s-io)
