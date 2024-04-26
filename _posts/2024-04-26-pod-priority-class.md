@@ -24,3 +24,8 @@ Let's consider a scenario where an Amazon EKS cluster consists of 10 nodes, and 
 In such scenarios, leveraging Pod Priority Class becomes imperative to ensure the smooth operation of DaemonSets. By assigning a higher priority class to DaemonSet Pods, Kubernetes prioritizes their scheduling, ensuring they are allocated resources before other Pods. This prevents DaemonSet Pods from being stuck in a pending state indefinitely, thereby maintaining the cluster's stability and reliability.
 
 By effectively utilizing Pod Priority Class, Kubernetes users can streamline resource allocation, prioritize critical workloads, and mitigate potential bottlenecks, ensuring the smooth operation of containerized applications in dynamic environments.
+
+**Here are some reference links to the official Kubernetes documentation regarding Pod Priority Class:**
+1. [Kubernetes Priority and Preemption](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/)
+2. [Kubernetes Priority Class](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/#priority-class)
+3. [Kubernetes API Reference: PriorityClass](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#priorityclass-v1-scheduling-k8s-io)
