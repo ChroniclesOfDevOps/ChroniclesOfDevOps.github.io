@@ -9,7 +9,7 @@ Unstructured logs are primarily human-readable strings with embedded variables. 
 
 **Example of Unstructured Logs:**
 ```
-image 'file.jpg' was uploaded successfully
+Connection to database failed
 ```
 
 ### Structured Logs
@@ -18,10 +18,10 @@ Structured logging helps organize event data upon creation, facilitating easier 
 **Example of Structured Logs:**
 ```json
 {
-  "level": "info",
-  "timestamp": "2023-10-25T07:12:46.743Z",
-  "filename": "file.jpg",
-  "msg": "image 'file.jpg' was uploaded successfully"
+  "level": "error",
+  "timestamp": "2024-06-13T07:12:46.743Z",
+  "db": "database-1",
+  "msg": "Connection to database failed"
 }
 ```
 
@@ -34,8 +34,8 @@ Log levels define the severity or urgency of a log entry. They help distinguish 
 
 **Examples:**
 ```json
-{"level":"info","message":"user 'xyz' created successfully"}
-{"level":"fatal","message":"database failed to connect"}
+{"level": "info","timestamp": "2024-06-13T10:15:45.123Z","msg": "Data inserted successfully"}
+{"level": "error","timestamp": "2024-06-13T10:30:15.103Z","msg": "Connection to database failed"}
 ```
 
 ### Timestamp
@@ -50,17 +50,16 @@ Log exceptions with a stack trace to determine the root cause of issues quickly.
 **Example:**
 ```json
 {
-  "level": 50,
+  "level": "fatal",
   "time": "2022-06-15T21:23:04.436Z",
-  "pid": 285659,
-  "hostname": "fedora",
   "err": {
     "type": "Error",
-    "message": "an error",
-    "stack": "Error: an error\n    at Object.<anonymous> (/home/ayo/dev/demo/snippets/main.js:23:9)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Module._load (node:internal/modules/cjs/loader:827:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)\n    at node:internal/main/run_main_module:17:47"
+    "message": "runtime error",
+    "stack": "runtime error: invalid memory address or nil pointer dereference\n    goroutine 1 [running]:\n    main.main()\n        /home/ayo/dev/demo/snippets/main.go:10 +0x40\n    runtime.main()\n        /usr/local/go/src/runtime/proc.go:225 +0x256\n    runtime.goexit()\n        /usr/local/go/src/runtime/asm_amd64.s:1371 +0x1"
   },
-  "msg": "an error"
+  "msg": "runtime error"
 }
+
 ```
 
 ### Add Contextual Fields to Log Entries
