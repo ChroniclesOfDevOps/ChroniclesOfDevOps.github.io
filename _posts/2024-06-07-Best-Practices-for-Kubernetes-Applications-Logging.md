@@ -39,8 +39,8 @@ Log levels define the severity or urgency of a log entry. They help distinguish 
 ```
 Some commonly used log levels include: Info, Warn, Error, and Fatal.
 
-### Timestamp
-Ensure each log entry is accompanied by a timestamp for contextualizing and organizing your logs. Record timestamps in ISO-8601 format.
+### Timestamp 
+Ensure each log entry is accompanied by a timestamp for contextualizing and organizing your logs. Record timestamps in ISO-8601 format. This consistency aids in correlating events across distributed systems.
 
 ### Descriptive Log Messages
 Include thorough details about the event in each log entry without unnecessary or redundant information. Descriptive messages provide meaningful insights.
