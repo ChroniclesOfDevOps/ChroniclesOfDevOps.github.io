@@ -37,6 +37,7 @@ Log levels define the severity or urgency of a log entry. They help distinguish 
 {"level": "info","timestamp": "2024-06-13T10:15:45.123Z","msg": "Data inserted successfully"}
 {"level": "error","timestamp": "2024-06-13T10:30:15.103Z","msg": "Connection to database failed"}
 ```
+Some commonly used log levels include: Info, Warn, Error, and Fatal.
 
 ### Timestamp
 Ensure each log entry is accompanied by a timestamp for contextualizing and organizing your logs. Record timestamps in ISO-8601 format.
