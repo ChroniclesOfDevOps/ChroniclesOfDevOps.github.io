@@ -1,6 +1,6 @@
 # Best Practices for Kubernetes Logging
 
-Logging is crucial for managing and maintaining Kubernetes applications. Proper logging helps in monitoring, troubleshooting, and optimizing your system.Inadequate logging can result in challenges in identifying issues quickly and optimizing system performance. Here’s a comprehensive guide to best practices for logging in Kubernetes applications.
+Logging is crucial for managing and maintaining Kubernetes applications. Proper logging helps in monitoring, troubleshooting, and optimizing your system. Inadequate logging can result in challenges in identifying issues quickly and optimizing system performance. Here’s a comprehensive guide to best practices for logging in Kubernetes applications.
 
 ## Logging Formats
 
