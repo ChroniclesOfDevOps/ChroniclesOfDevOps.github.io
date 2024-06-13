@@ -25,7 +25,7 @@ Structured logging helps organize event data upon creation, facilitating easier 
 }
 ```
 
-Structured logs help create dashboards in tools like Grafana to monitor various metrics efficiently.
+Structured logs help create dashboards in tools like Grafana, ELK to monitor various metrics efficiently.
 
 ## Important Fields in Logs
 
